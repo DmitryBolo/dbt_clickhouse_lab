@@ -38,11 +38,9 @@ resource "yandex_mdb_clickhouse_cluster" "clickhouse_starschema" {
       timezone                        = "UTC"
       geobase_uri                     = ""
       query_log_retention_size        = 1073741824
-      query_log_retention_time        = 2592000
-      query_thread_log_enabled        = true
+        query_thread_log_enabled        = true
       query_thread_log_retention_size = 536870912
       part_log_retention_size         = 536870912
-      part_log_retention_time         = 2592000
       metric_log_enabled              = true
       metric_log_retention_size       = 536870912
       trace_log_enabled               = true
